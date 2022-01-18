@@ -18,6 +18,10 @@ a:link{
     color: red;
 }
 
+a:visited {
+    color: red;
+  }
+
 a:hover{
     color: blue;
 }

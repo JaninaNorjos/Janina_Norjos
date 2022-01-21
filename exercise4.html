@@ -22,31 +22,42 @@
         color: white;
         line-height: 100px;
         margin: 0;
+        
+
       }
 
       article {
         padding: 10px;
         margin: 10px;
         background: aqua;
+        flex-wrap: wrap;
+        position:static;
 
       }
+
+        .navbar > div{
+
+height: 440px;
+width: 200px; 
+position: static; 
+z-index: 0; /* Stay on top */
+
+left: 0;
+background-color: white;
+overflow-x: hidden; /* Disable horizontal scroll */
+padding-top: 5px;
+margin: 10px;
+float:left;
+font-size: 18px;
+font-weight: bold;
+
+      
+
+      }
+
       </style>
 
-<style>
-    .flexContainer {
-    display: block;
-    flex-wrap: wrap;
-    background-color: white;
-    align-content: space-between;
-  }
-  .flexContainer > div, div {
-    background-color: white;
-    margin: 10px;
-    width: fit-content;
 
-  }
-  
-</style>
 </head>
 <body>
 
@@ -55,8 +66,10 @@
         <h1>Flex Box Examples </h1>
       </header>
 
+
       <section>
-        <div class="flexContainer">
+
+        <div class="navbar">
 
             <div>
                 <p>side bar</p>
@@ -66,7 +79,8 @@
                 <p>side bar</p>
     
             </div>
-          
+     
+        
         <article>
           <h2>What is HTML?</h2>
           <p>
@@ -99,6 +113,8 @@
             be nested inside an inline element, but it might be nested inside another block-level element.
           </p>
         </article>
+    
+        
       </section> 
       <footer>
         <h1>Learning Flex @ 2022</h1>
